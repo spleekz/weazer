@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Map from './Map';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 let map, marker;
-let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+// let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3BsZWVreiIsImEiOiJja203bTQ3bW8wNTl1MnBwaGliNTFpb3BtIn0.6MA8A7LX1miJ2Wtop3YyDQ';
 class mapContainer extends Component {
   componentDidMount() {
