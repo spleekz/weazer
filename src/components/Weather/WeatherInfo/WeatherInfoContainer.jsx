@@ -8,7 +8,7 @@ let mapStateToProps = (state) => {
     temperature: state.weatherData.weather.temperature,
     location: state.weatherData.location,
     units: state.units,
-    timeData : state.weatherData.timeData
+    timeData: state.weatherData.timeData
   }
 }
 export default connect(mapStateToProps, { setMainUnit })(WeatherInfo);

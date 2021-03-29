@@ -27,12 +27,12 @@ class mapContainer extends Component {
   }
   render() {
     return (
-      <div className = 'map_container'>
+      <div className='map_container'>
         <Map {...this.props} />
         <div className="coordinates">
-        <div className="coordinates__item">Широта: {this.props.coordinates.lat}°</div>
-        <div className="coordinates__item">Долгота: {this.props.coordinates.lon}°</div>
-      </div>
+          <div className="coordinates__item">Широта: {this.props.coordinates.lat}°</div>
+          <div className="coordinates__item">Долгота: {this.props.coordinates.lon}°</div>
+        </div>
       </div>
     );
   }

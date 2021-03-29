@@ -41,20 +41,20 @@ const SearchForm = (props) => {
   return (
     <div className='search-form'>
       <div className="search-form__section-1">
-        <button className="refresh-container" onClick={updateWeather} disabled = {isRotate}>
+        <button className="refresh-container" onClick={updateWeather} disabled={isRotate}>
           <div onAnimationEnd={() => { setIsRotate(false) }} className={isRotate ? 'search-form__refresh rotate' : 'search-form__refresh'}></div>
         </button>
-        <input className='search-form__input' onChange={updateInputValue} 
-        onKeyPress={enterHandler} ref={input} placeholder='Введите город' />
+        <input className='search-form__input' onChange={updateInputValue}
+          onKeyPress={enterHandler} ref={input} placeholder='Введите город' />
         <button className='search-form__button' onClick={() => { getWeather(props.inputValue) }}>Поиск</button>
       </div>
       <div className="search-form__section-2">
         <div className="search-form__units">
           {props.units.map((unit) => {
             return (
-              <button className={unit.isSelected ? 'search-form__unit selected' : 'search-form__unit'} 
-              key={props.units.indexOf(unit)} 
-              onClick={() => { props.setMainUnit(unit.name) }}>°{unit.label}</button>
+              <button className={unit.isSelected ? 'search-form__unit selected' : 'search-form__unit'}
+                key={props.units.indexOf(unit)}
+                onClick={() => { props.setMainUnit(unit.name) }}>°{unit.label}</button>
             )
           })}
         </div>

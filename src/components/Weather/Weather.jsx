@@ -7,7 +7,6 @@ const Weather = () => {
     <div className='weather'>
       <WeatherInfoContainer />
     </div>
-
   );
 }
 
