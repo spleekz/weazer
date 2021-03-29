@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MapContainer from './components/Map/MapContainer';
+import SearchFormContainer from './components/Weather/SearchForm/SearchFormContainer';
+import './App.css'
+import Weather from './components/Weather/Weather';
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      <div className='header'>
+        <SearchFormContainer season={props.season} />
+      </div>
+      <div className='app'>
+        <Weather />
+        <MapContainer />
+      </div>
     </div>
   );
 }

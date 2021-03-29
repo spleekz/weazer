@@ -1,0 +1,7 @@
+.preloader{
+  width: 29rem;
+  height: 29rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

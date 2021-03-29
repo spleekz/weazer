@@ -1,13 +1,150 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 1vw!important;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 1440px) {
+  html {
+    font-size: 14.6px!important;
+  }
+  .weather-info__extra_item{
+    font-size: 1.4rem!important;
+  }
+  .temperature__value{
+    font-size: 4.6rem!important;
+    min-width: 15.75rem!important;
+  }
+  .weather-icon{
+    width: 7rem!important;
+    height: 7rem!important;
+  }
+  .map-box{
+    height: 40vw!important;
+  }
+
+}
+@media (max-width:1100px){
+  html{
+    font-size: 13px!important;
+  }
+  .weather-info__extra_item{
+    font-size: 1.1rem!important;
+  }
+  .temperature__value{
+    font-size: 6.3rem!important;
+    min-width: 15.75rem!important;
+  }
+  .weather-icon{
+    width: 12rem!important;
+    height: 12rem!important;
+  }
+}
+@media(max-width:1020px){
+  .app{
+    flex-direction: column;
+    align-items: center!important;
+  }
+  .weather{
+    width: 90%!important;
+  }
+  .weather-icon{
+    width: 5rem!important;
+    height: 5rem!important;
+  }
+  .weather-info__location{
+    text-align: center!important;
+  }
+  .weather-info__extra_item{
+    text-align: center!important;
+    font-size: 1.4rem !important;
+  }
+  .timer__current-date{
+    text-align: center;
+  }
+  .map_container{
+    width: 90%!important;
+  }
+  .map-box{
+    width: 100% !important;
+    height: 80vw;
+  }
+  .coordinates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media(max-width:790px){
+  html{
+    font-size: 11px!important;
+  }
+  .weather-icon{
+    width: 4rem!important;
+    height: 4rem!important;
+  }
+}
+@media(max-width:650px){
+  .weather-info__location{
+    font-size: 2rem!important;
+  }
+  .temperature__value{
+    font-size: 4.6rem!important;
+    min-width: 13.75rem!important;
+  }
+  .weather-info__extra_item{
+    font-size: 1rem!important;
+  }
+  .timer__current-date{
+    font-size: 1.37rem!important;
+  }
+  .weather-icon{
+    width: 3.5rem!important;
+    height: 3.5rem!important;
+  }
+}
+@media (max-width:560px){
+  .weather-info__location{
+    font-size: 1.3rem!important;
+  }
+  .temperature__value{
+    font-size: 2.9rem!important;
+  }
+  .timer__current-date{
+    font-size: 1.125rem!important;
+  }
+  .weather-info__extra_item{
+    font-size: 0.8rem!important;
+  }
+  .weather-icon{
+    width: 3rem!important;
+    height: 3rem!important;
+  }
+}
+@media(max-width:480px){
+  .weather-info__location{
+    font-size: 1.2rem!important;
+  }
+  .weather-icon{
+    margin-left:-0.9rem!important;
+  }
+  .temperature__value{
+    font-size: 2.6rem!important;
+    min-width: 8rem!important;
+  }
+  .timer__current-date{
+    font-size: 1rem!important;
+  }
+}
+@media(max-width:430px){
+  .temperature__value{
+    font-size: 2.3rem!important;
+  }
+  .weather-info__extra_item{
+    font-size: 0.6rem!important;
+  }
+  .timer__current-date{
+    font-size: 0.8rem!important;
+  }
 }
