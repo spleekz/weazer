@@ -25,7 +25,7 @@ export const imageApi = {
 }
 export const locationApi = {
   getUserLocation: () => {
-    return axios.get(`http://ip-api.com/json/?lang=ru`)
+    return axios.get(`https://ipapi.co/json/`)
       .then(response => {
         return response.data
       })
