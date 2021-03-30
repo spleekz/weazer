@@ -26,6 +26,8 @@
    justify-content: space-between;
  }
 .search-form__input{
+  font-family: 'Ledger', serif;
+  font-size: 1rem;
   padding: 0 0.8rem; 
   color:#fff;
   border-radius: 0.6rem;
@@ -39,9 +41,8 @@
 .search-form__button{
   font-family: 'Ledger', serif;
   font-size: 0.88rem;
-  background-color: rgba(76, 82, 85, 0.4);
+  background-color: rgba(177, 177, 177, 0.6);
   color:#fff;
-  border:0.07rem solid rgba(228, 227, 227, 0.2);
   width:6rem;
   height: 2.8125rem;
   border-radius:0.6rem ;
@@ -55,7 +56,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(177, 177, 177, 0.411);
+  background-color: rgba(177, 177, 177, 0.6);
   border-radius: 0.6rem;
   margin-right: 1rem;
 }
@@ -71,16 +72,19 @@
   animation: rotate-keyframes 1.1s;
 }
 .search-form__unit{
+  font-family: 'Ledger', serif;
+  font-size: 1rem;
   color:#fff;
   width: 2.6rem;
   height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(170, 170, 170, 0.507);
+  background-color: rgba(76, 82, 85, 0.4);
   border-radius: 0.6rem;
   text-transform: uppercase;
+  transition: background-color  0.2s;
 }
 .selected{
-  background-color: rgb(170, 170, 170);
+  background-color: rgba(177, 177, 177, 0.712)
 }

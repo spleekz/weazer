@@ -1,8 +1,9 @@
 .weather{
   padding: 0.7rem;
   width: 60%;
+  background-color: rgb(33 38 40 / 70%);
+  border-radius: 1rem;
 }
 .weather-info{
   color:#fff;
 }
-
