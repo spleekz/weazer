@@ -47,7 +47,7 @@ const WeatherInfo = (props) => {
           <div className="weather-info__extra_item">{props.weather.ui.description}</div>
           <div className='weather-info__extra_item'>Ощущается как {feelsLike}°{mainUnit}</div>
           <div className='weather-info__extra_item'>Влажность: {props.weather.humidity} %</div>
-          <div className='weather-info__extra_item'> Скорость ветра: {windSpeed} м/с </div>
+          <div className='weather-info__extra_item'> Скорость ветра: {windSpeed} м/с</div>
           <div className='weather-info__extra_item'>Облачность: {props.weather.clouds} %</div>
           <div className="weather-info__sun">
             <div className="weather-info__extra_item">Восход в {sunriseHours}:{sunriseMinutes}</div>
