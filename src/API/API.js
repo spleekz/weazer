@@ -1,5 +1,5 @@
 import axios from "axios"
-let random = (min, max) => {
+const random = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 export const weatherApi = {
@@ -12,14 +12,11 @@ export const weatherApi = {
 }
 export const imageApi = {
   getImage: (season) => {
-    return axios.get("https://api.unsplash.com/search/photos?query=" + season + "&client_id=Yn6kPeTPPlgziJSqHv-8XhjCwsRvROmvpQby4cEdhkk")
-      .then(test => {
-        let pageIndex = random(1, test.data.total_pages)
-        return axios.get("https://api.unsplash.com/search/photos?query=" + season + "&page=" + pageIndex + "&client_id=Yn6kPeTPPlgziJSqHv-8XhjCwsRvROmvpQby4cEdhkk")
-          .then(response => {
-            let imageIndex = random(0, response.data.results.length - 1)
-            return response.data.results[imageIndex].urls.regular
-          })
+    let pageIndex = random(1, 1000)
+    return axios.get("https://api.unsplash.com/search/photos?query=" + season + "&page=" + pageIndex + "&client_id=Yn6kPeTPPlgziJSqHv-8XhjCwsRvROmvpQby4cEdhkk")
+      .then(response => {
+        let imageIndex = random(0, response.data.results.length - 1)
+        return response.data.results[imageIndex].urls.regular
       })
   }
 }
